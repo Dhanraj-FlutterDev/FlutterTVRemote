@@ -1,6 +1,8 @@
-import 'package:control_pad/views/joystick_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_tvremote/utils/color_palette.dart';
+import 'package:flutter_tvremote/widgets/joystick_view.dart';
+import 'package:flutter_tvremote/widgets/main_tv_button.dart';
 
 void main()=> runApp(MyApp());
 
@@ -23,10 +25,10 @@ class _TVRemoteDemoState extends State<TVRemoteDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white60,
+      backgroundColor: ColorPalette.black,
       appBar: AppBar(
-        leading: Icon(Icons.tv),
-        title: Text('TV REMOTE'),
+        leading: MainTvButton(),
+        title: Text('ANDROID TV REMOTE'),
         titleSpacing: 2.0,
         backgroundColor: Colors.white24,
       ),
